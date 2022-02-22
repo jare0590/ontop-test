@@ -1,0 +1,41 @@
+<div class="search">
+  <div class="search__line">
+    <mat-form-field class="search__text-input" appearance="outline">
+      <mat-label>Search</mat-label>
+      <input matInput placeholder="Search">
+      <mat-icon matSuffix>search</mat-icon>
+    </mat-form-field>
+    <button class="search--button" mat-raised-button disabled>
+      <mat-icon>tune</mat-icon> Filter
+    </button>
+    <button class="search--button" mat-raised-button color="accent">
+      <mat-icon>add</mat-icon> New hire
+    </button>
+  </div>
+  <div class="search__line search__line--more-filters">
+    <!-- <ontop-date-picker></ontop-date-picker> -->
+    <mat-form-field class="search--select" appearance="outline">
+      <mat-label>Contract type</mat-label>
+      <mat-select>
+        <mat-option value="super_client_two">Super client two</mat-option>
+        <mat-option value="super_client_three">Super client three</mat-option>
+        <mat-option value="super_client_four">Super client four</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field class="search__text-input search__text-input--contractor" appearance="outline">
+      <mat-label>Contractor Name</mat-label>
+      <input matInput placeholder="Contractor Name">
+    </mat-form-field>
+    <mat-form-field class="search--select" appearance="outline">
+      <mat-label>Status</mat-label>
+      <mat-select>
+        <mat-option value="active">Active</mat-option>
+        <mat-option value="inactive">Inactive</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <button class="search__clear-filters">
+      <mat-icon>delete_outline</mat-icon>
+      Clear filters
+    </button>
+  </div>
+</div>

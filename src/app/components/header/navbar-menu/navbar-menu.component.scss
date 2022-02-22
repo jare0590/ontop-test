@@ -1,0 +1,19 @@
+@use '../../../../styles/variables' as *;
+@use '../../../../styles/helpers' as *;
+
+.navbar {
+  &__menu {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__item {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 160px;
+  }
+}

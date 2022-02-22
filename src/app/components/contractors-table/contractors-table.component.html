@@ -1,0 +1,52 @@
+<div class="table">
+  <div class="table__header">
+    <ng-container *ngFor="let title of tableTitles">
+      <span>{{ title }}</span>
+    </ng-container>
+  </div>
+  <div class="table__body">
+    <ng-container *ngFor="let contractor of contractorsData; let i = index">
+      <div class="contractor">
+        <div class="contractor__info">
+          <div class="contractor--title">
+            <span>Contractor name</span>
+          </div>
+          <img [src]="contractor.avatar" class="contractor--avatar">
+          <div class="contractor--data"> {{ contractor.name }} </div>
+        </div>
+        <div class="contractor__info">
+          <div class="contractor--title">
+            <span>Type</span>
+          </div>
+          <div class="contractor--data"> {{ contractor.type }} </div>
+        </div>
+        <div class="contractor__info">
+          <div class="contractor--title">
+            <span>Start date</span>
+          </div>
+          <div class="contractor--data"> {{ contractor.startDate }} </div>
+        </div>
+        <div class="contractor__info">
+          <div class="contractor--title">
+            <span>Amount</span>
+          </div>
+          <div class="contractor--data"> ${{ contractor.amount }} USD </div>
+        </div>
+        <div class="contractor__info">
+          <div class="contractor--title">
+            <span>Status</span>
+          </div>
+          <ontop-contractor-status [status]="contractor.status"></ontop-contractor-status>
+        </div>
+        <div class="contractor__info">
+          <div class="contractor--title">
+            <span>Actions</span>
+          </div>
+          <div class="contractor--data">
+            <ontop-actions-menu></ontop-actions-menu>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>

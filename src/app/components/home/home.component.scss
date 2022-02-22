@@ -1,0 +1,15 @@
+@use '../../../styles/variables' as *;
+@use '../../../styles/helpers' as *;
+
+.home {
+  padding: 0 2em;
+  text-align: center;
+
+  @include breakpoint-up(desktop) {
+    padding: 0 10em;
+  }
+
+  @include breakpoint-up(desktop-xl) {
+    padding: 0 13em;
+  }
+}

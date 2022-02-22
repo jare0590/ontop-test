@@ -1,0 +1,14 @@
+@use '../../../../styles/variables' as *;
+@use '../../../../styles/helpers' as *;
+
+.header-right-block {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+
+  .line-separator {
+    background-color: $color-silver;
+    height: 100%;
+    width: 2px;
+  }
+}

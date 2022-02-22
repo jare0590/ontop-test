@@ -1,0 +1,82 @@
+@use '../../../styles/variables' as *;
+@use '../../../styles/helpers' as *;
+
+.search {
+  &__line {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    @include breakpoint-up(desktop) {
+      flex-wrap: nowrap;
+    }
+
+    &--more-filters {
+      padding: 0 50px 27px;
+      position: relative;
+
+      @include breakpoint-up(desktop) {
+        padding: 0;
+      }
+    }
+  }
+  &__text-input {
+    width: 100%;
+
+    @include breakpoint-up(desktop) {
+      width: 60%
+    }
+
+    &--contractor {
+      width: 100%;
+
+      @include breakpoint-up(desktop) {
+        width: 45%;
+      }
+    }
+  }
+  &--button {
+    margin-bottom: 21px;
+    padding: 8px 0;
+    width: 45%;
+
+    &:first-of-type {
+      width: 15%;
+
+      @include breakpoint-up(desktop) {
+        width: 15%
+      }
+    }
+
+    &:last-of-type {
+      width: 80%;
+
+      @include breakpoint-up(desktop) {
+        width: 15%
+      }
+    }
+  }
+  &--select {
+    width: 100%;
+    
+    @include breakpoint-up(desktop) {
+      width: initial;
+    }
+  }
+  &__clear-filters {
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    bottom: 0;
+    color: $color-red;
+    display: flex;
+    outline: none;
+    position: absolute;
+    right: 50px;
+    
+    @include breakpoint-up(desktop) {
+      display: none;
+    }
+  }
+}

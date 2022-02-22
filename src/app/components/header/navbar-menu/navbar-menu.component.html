@@ -1,0 +1,9 @@
+<div class="navbar__menu">
+    <ng-container *ngFor="let navBar of navBarList">
+        <div class="navbar__item">
+            <mat-icon> {{navBar.icon}} </mat-icon>
+            <a> {{ navBar.title}} </a>
+            <mat-icon>expand_more</mat-icon>
+        </div>
+    </ng-container>
+</div>

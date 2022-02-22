@@ -1,0 +1,18 @@
+@use '../../../../styles/variables' as *;
+@use '../../../../styles/helpers' as *;
+
+.menu {
+  &--desktop {
+    display: none;
+
+    @include breakpoint-up(desktop) {
+      display: block;
+    }
+  }
+
+  &--mobile {
+    @include breakpoint-up(desktop) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+<button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Actions">
+  <mat-icon class="menu--desktop">more_vert</mat-icon>
+  <mat-icon class="menu--mobile">more_horiz</mat-icon>
+</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>
+    <mat-icon class="material-icons-outlined">border_color</mat-icon>
+    <span>Edit</span>
+  </button>
+  <button mat-menu-item disabled>
+    <mat-icon>gesture</mat-icon>
+    <span>Sign</span>
+  </button>
+  <button mat-menu-item>
+    <mat-icon>summarize</mat-icon>
+    <span>View summary</span>
+  </button>
+  <button mat-menu-item>
+    <mat-icon class="trash">delete_outline</mat-icon>
+    <span>Delete</span>
+  </button>
+</mat-menu>
